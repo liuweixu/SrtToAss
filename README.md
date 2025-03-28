@@ -8,5 +8,13 @@
 
 然后我把程序打包为exe可执行文件夹，上传到Github，可以直接使用。
 
+### 开发原因
+因为没找到需要批量把srt格式文件转为自己想要的带样式的ass文件，而网上找的VideoCaptioner等开源软件基本只能一个一个处理，不太方便，剩下的可能是要付费的，所以我就Python自己开发一个。（有些工作是用DeepSeek辅助开发的）。
+
 ### 软件样式图：
 ![](./img/image1.png)
+
+## 鸣谢
+- [VideoCaptioner](https://github.com/WEIFENG2333/VideoCaptioner)
+- [DeepSeek](https://www.deepseek.com/)
+- [PySide6-Code-Tutorial教程](https://github.com/muziing/PySide6-Code-Tutorial)
