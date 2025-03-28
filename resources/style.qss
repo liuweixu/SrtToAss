@@ -1,0 +1,192 @@
+/* 暗黑风格样式表 */
+QWidget {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    font-family: 'Microsoft YaHei';
+    font-size: 12pt;
+}
+
+QLineEdit, QTextEdit, QComboBox, QSpinBox, QDoubleSpinBox {
+    background-color: #404040;
+    color: #FFFFFF;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 5px;
+    selection-background-color: #0099FF;
+}
+
+QPushButton {
+    background-color: #0099FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #0077CC;
+}
+
+QPushButton:pressed {
+    background-color: #005599;
+}
+
+QPushButton:disabled {
+    background-color: #555555;
+    color: #888888;
+}
+
+QComboBox {
+    padding: 3px 6px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #555555;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #404040;
+    color: #FFFFFF;
+    selection-background-color: #0099FF;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    min-height: 30px;
+    padding: 4px;
+}
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #555555;
+    border-radius: 0 4px 0 0;
+}
+
+QSpinBox::down-button, QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    border-left: 1px solid #555555;
+    border-radius: 0 0 4px 0;
+}
+
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
+    image: url(icons/up_arrow.svg);
+    width: 12px;
+    height: 12px;
+}
+
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
+    image: url(icons/down_arrow.svg);
+    width: 12px;
+    height: 12px;
+}
+
+QScrollBar:vertical {
+    background: #404040;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #666666;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical, 
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, 
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QTextEdit {
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Consolas';
+}
+
+QMessageBox {
+    background-color: #2D2D2D;
+}
+
+QMessageBox QLabel {
+    color: #FFFFFF;
+    font-size: 12pt;
+}
+
+QMessageBox QPushButton {
+    min-width: 80px;
+    padding: 6px 12px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #0077CC;
+}
+
+/* 自定义颜色选择器样式 */
+ColorDialog {
+    background-color: #2D2D2D;
+}
+
+ColorDialog QLabel {
+    color: #FFFFFF;
+}
+
+ColorDialog QPushButton {
+    background-color: #0099FF;
+}
+
+/* 进度条样式 */
+QProgressBar {
+    border: 1px solid #555555;
+    border-radius: 4px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #0099FF;
+    border-radius: 3px;
+}
+
+/* 分割线样式 */
+QSplitter::handle {
+    background-color: #555555;
+    width: 2px;
+    height: 2px;
+}
+
+/* 选项卡样式 */
+QTabWidget::pane {
+    border: 1px solid #555555;
+    border-radius: 4px;
+}
+
+QTabBar::tab {
+    background-color: #404040;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border: none;
+}
+
+QTabBar::tab:selected {
+    background-color: #0099FF;
+}
+
+QTabBar::tab:hover {
+    background-color: #0077CC;
+}
