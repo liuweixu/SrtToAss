@@ -14,6 +14,9 @@
 ### 软件样式图：
 ![](./img/image1.png)
 
+### 联系
+如果使用过程中有问题或者有新的需求，可以通过issue提交或者[我的邮件](wei_xu_liu@163.com)反馈意见，十分感谢。
+
 ## 鸣谢
 - [VideoCaptioner](https://github.com/WEIFENG2333/VideoCaptioner)
 - [DeepSeek](https://www.deepseek.com/)
