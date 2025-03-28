@@ -8,7 +8,7 @@ a = Analysis(
     binaries=[],
     datas=[
         ('resources/style.qss', 'resources'),
-        ('resources/fonts/*', 'resources/fonts')
+        ('resources/fonts', 'resources/fonts')
     ],
     hiddenimports=[],
     hookspath=[],
