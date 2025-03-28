@@ -48,7 +48,7 @@ class MainWindow(QWidget):
             QComboBox { font-family: inherit; }
             QComboBox QAbstractItemView::item { 
                 font-family: inherit; 
-                height: 30px; 
+                height: 26px; 
             }
         """)
         self.font_status_label = QLabel()
@@ -59,13 +59,13 @@ class MainWindow(QWidget):
         # 字号
         self.font_size = QSpinBox()
         self.font_size.setRange(1, 100)
-        self.font_size.setValue(42)
+        self.font_size.setValue(20)
         form_layout.addRow("字号:", self.font_size)
 
         # 间距
         self.spacing = QDoubleSpinBox()
         self.spacing.setRange(0, 10)
-        self.spacing.setValue(2.6)
+        self.spacing.setValue(0.0)
         self.spacing.setSingleStep(0.1)
         form_layout.addRow("字幕间距:", self.spacing)
 
@@ -83,7 +83,7 @@ class MainWindow(QWidget):
         # 边框大小
         self.border_size = QDoubleSpinBox()
         self.border_size.setRange(0, 10)
-        self.border_size.setValue(2.6)
+        self.border_size.setValue(2.0)
         self.border_size.setSingleStep(0.1)
         form_layout.addRow("边框大小:", self.border_size)
 
