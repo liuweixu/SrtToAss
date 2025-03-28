@@ -17,7 +17,7 @@ from PySide6.QtCore import QTimer
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("SRT转ASS工具 - 紧凑版")
+        self.setWindowTitle("SrtToAss")
         self.setup_ui()
         self.setMinimumSize(1020, 750)
 
