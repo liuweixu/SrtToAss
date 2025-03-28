@@ -14,7 +14,6 @@ class ConversionThread(QThread):
         self.style = style
         self.running = True
 
-
     def run(self):
         srt_files = [
             f for f in os.listdir(self.folder_path)

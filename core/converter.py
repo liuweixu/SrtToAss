@@ -11,6 +11,7 @@ COLOR_MAP = {
     'orange': '&H000087F5'
 }
 
+# 核心转换函数
 def srt_time_to_ass(time_str):
     dt = datetime.strptime(time_str, '%H:%M:%S,%f')
     return dt.strftime('%H:%M:%S.%f')[:-4]
@@ -43,7 +44,13 @@ def generate_ass_header(style):
         f"Alignment, MarginL, MarginR, MarginV, Encoding\n"
         f"Style: Default,{style['fontname']},{style['fontsize']},"
         f"{style['primary_color']},&H00000000,{style['border_color']},&H00000000,"
-        f"0,0,0,0,100,100,{style['spacing']},0,1,{style['border_size']},0,2,0,0,0,1\n"
+        f"{'-1' if style['bold'] else '0'},"
+        f"{'-1' if style['italic'] else '0'},0,0,"
+        f"{style['scale_x']},{style['scale_y']},"
+        f"{style['spacing']},0,1,{style['border_size']},0,"
+        f"{style['alignment']},"
+        f"{style['margin_l']},{style['margin_r']},{style['margin_v']},"
+        f"{style['encoding']}\n"
         f"\n"
         f"[Events]\n"
         f"Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n"
